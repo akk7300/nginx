@@ -9,7 +9,6 @@ server {
     add_header X-XSS-Protection "1; mode=block";
     add_header X-Content-Type-Options "nosniff";
     add_header Content-Security-Policy "default-src 'none';
-    script-src 'self' https://memberapp.aceplusbeta.com/ 'unsafe-inline' 'unsafe-eval';
     style-src 'self' https://fonts.googleapis.com 'unsafe-inline' 'unsafe-eval' ;
     font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com ;
     connect-src 'self';img-src 'self' data: *; base-uri 'self';form-action 'self';";
